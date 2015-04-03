@@ -1,0 +1,123 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" Plugins
+Plugin 'flazz/vim-colorschemes'
+Plugin 'scrooloose/nerdtree'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-surround'
+Plugin 'itchyny/lightline.vim'
+Plugin 'kien/ctrlp.vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+" turn off beeps
+set noerrorbells
+set visualbell
+
+" hide mouse when typing
+set mousehide
+
+" search
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+nnoremap <ESC> :noh<RETURN><ESC>
+
+" display line numbers
+set number
+
+" visible lines while scrolling
+set scrolloff=3
+
+" hide scrollbars
+set guioptions-=r
+set guioptions-=L
+
+" autosave on focus lost
+autocmd BufLeave,FocusLost * silent! wall
+
+" write on buffer change
+set autowrite
+
+" read on file change
+set autoread
+
+" disable swap and backup
+set nobackup
+set noswapfile
+
+" colorscheme
+colorscheme anotherdark
+
+" line width
+set textwidth=0
+
+" hightlight current line
+if has("gui_running")
+  set cursorline
+endif
+
+" wrapping sucks
+set nowrap
+
+" tabs to spaces
+set expandtab
+set tabstop=2
+set shiftwidth=2
+
+" always show status line
+if has("gui_running")
+  set laststatus=2
+endif
+
+" show completion list
+set wildmenu
+
+" folding
+set foldmethod=syntax
+set foldlevel=100
+
+" copy from cursor to line end
+nnoremap Y y$
+
+" next and previous tab
+map <C-S-L> :tabnext<CR>
+map <C-S-H> :tabprevious<CR>
+
+" CTRL-P ignore
+let g:ctrlp_custom_ignore = 'node_modules\|dist\|\|public\|bower\|bower_components'
+
+" NERDTree shortcut
+map <D-S-N> :NERDTree<CR>
+
+" startup for gui
+if has("gui_running")
+  cd ~/Projects
+  set fullscreen
+  autocmd VimEnter * NERDTree
+endif

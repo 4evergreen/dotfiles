@@ -1,0 +1,10 @@
+" ignore keys in google docs
+autocmd LocationChange .*                             js modes.passAllKeys = false
+autocmd LocationChange docs\\.google\\.com            js modes.passAllKeys = true
+
+" next and previous tab
+map <C-S-l> :tabnext<CR>
+map <C-S-h> :tabprev<CR>
+map <C-l> :tabnext<CR>
+map <C-h> :tabprev<CR>
+
