@@ -8,3 +8,25 @@ map <C-S-h> :tabprev<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprev<CR>
 
+" smart completion
+set complete=l
+
+" 10 items in completion
+set maxitems=10
+
+" remove additional title
+set titlestring=''
+
+" scroll faster
+nnoremap j 3j
+nnoremap k 3k
+nnoremap h 3h
+nnoremap l 3l
+
+" do not show link, Firefox does it by default
+set showstatuslinks=0
+
+" open links in new tabs usually
+noremap F f
+noremap f F
+
