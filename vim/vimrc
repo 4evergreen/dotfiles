@@ -111,7 +111,7 @@ nnoremap Y y$
 map <C-Tab> :tabnext<CR>
 
 " CTRL-P ignore
-let g:ctrlp_custom_ignore = 'node_modules\|dist\|\|public\|bower\|bower_components'
+let g:ctrlp_custom_ignore = 'node_modules\|dist\|public\|bower\|bower_components'
 
 " startup for gui
 if has("gui_running")
