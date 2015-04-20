@@ -2,7 +2,7 @@
 	name = Grisha Pushkov
 	email = grisha@push.org.ru
 [push]
-	default = matching
+	default = current
 [core]
 	editor = /usr/bin/vim
 	excludesfile = /Users/grisha/.gitignore
