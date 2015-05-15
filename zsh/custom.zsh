@@ -8,6 +8,7 @@ alias gpf="git push --force"
 alias gb="git branch --verbose"
 alias cdp="cd ~/Projects"
 alias cdw="cd ~/Work/current"
+alias gcam="git commit --amend --all --no-edit"
 
 # locale
 export LANG="en_US.UTF-8"
