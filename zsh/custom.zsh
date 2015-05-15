@@ -7,6 +7,7 @@ alias localip="ipconfig getifaddr en0"
 alias update="sudo brew update; brew upgrade; sudo npm install -g npm; sudo npm update -g"
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias gpf="git push --force"
+alias gb="git branch --verbose"
 
 # locale
 export LANG="en_US.UTF-8"
