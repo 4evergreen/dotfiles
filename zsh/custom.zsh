@@ -6,6 +6,8 @@ alias update="sudo brew update; brew upgrade; sudo npm install -g npm; sudo npm 
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias gpf="git push --force"
 alias gb="git branch --verbose"
+alias cdp="cd ~/Projects"
+alias cdw="cd ~/Work/current"
 
 # locale
 export LANG="en_US.UTF-8"
