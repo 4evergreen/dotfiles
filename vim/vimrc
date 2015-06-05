@@ -125,3 +125,6 @@ if has("gui_running")
   set fullscreen
   autocmd VimEnter * NERDTree
 endif
+
+" font
+set guifont=PT\ Mono:h13
