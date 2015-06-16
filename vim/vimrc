@@ -69,6 +69,14 @@ set autowrite
 " read on file change
 set autoread
 
+" pretty js source
+function! PrettyJs()
+  :%s/;//g
+  :%s/"/'/g
+endfunction
+
+command! PrettyJs silent call PrettyJs()
+
 " disable swap and backup
 set nobackup
 set noswapfile
