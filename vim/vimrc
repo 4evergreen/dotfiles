@@ -71,11 +71,11 @@ set autoread
 
 " pretty js source
 function! PrettyJs()
-  :%s/;//g
-  :%s/"/'/g
+  %s/;//ge
+  %s/"/'/ge
 endfunction
 
-command! PrettyJs silent call PrettyJs()
+command! PrettyJs call PrettyJs()
 
 " disable swap and backup
 set nobackup
