@@ -9,6 +9,7 @@ alias gb="git branch --verbose"
 alias cdp="cd ~/Projects"
 alias cdw="cd ~/Work/current"
 alias gcam="git commit --amend --all --no-edit"
+alias glg="git log --stat --color --patch"
 
 # locale
 export LANG="en_US.UTF-8"
