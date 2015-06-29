@@ -1,6 +1,6 @@
 # aliases
 alias socks="ssh -Nn -D 1080 vps.push.org.ru"
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias externalip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 alias update="sudo brew update; brew upgrade; sudo npm install -g npm; sudo npm update -g"
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
