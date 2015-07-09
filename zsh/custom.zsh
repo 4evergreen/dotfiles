@@ -10,6 +10,7 @@ alias cdp="cd ~/Projects"
 alias cdw="cd ~/Work/current"
 alias gcam="git commit --amend --all --no-edit"
 alias glg="git log --stat --color --patch"
+alias open="xdg-open"
 
 # locale
 export LANG="en_US.UTF-8"
@@ -22,3 +23,10 @@ export LC_TIME="ru_RU.UTF-8"
 
 # vi mode
 export KEYTIMEOUT=1
+
+# open last commit on github
+function gho {
+  commit=$(git log -1 | head -n 1 | sed 's/commit //')
+  repo=$(git remote -v | head -n 1 | sed 's/.*:\(.*\/.*\).git .*/\1/')
+  open https://github.com/$repo/commit/$commit &> /dev/null
+}
