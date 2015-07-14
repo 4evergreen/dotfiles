@@ -30,3 +30,8 @@ function gho {
   repo=$(git remote -v | head -n 1 | sed 's/.*:\(.*\/.*\).git .*/\1/')
   open https://github.com/$repo/commit/$commit &> /dev/null
 }
+
+# gems in PATH
+if which ruby >/dev/null && which gem >/dev/null; then
+  PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+fi
