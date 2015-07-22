@@ -31,3 +31,5 @@ set showstatuslinks=0
 noremap F f
 noremap f F
 
+" disable home page shortcut
+map <C-j> <nop>
