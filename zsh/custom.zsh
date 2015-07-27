@@ -11,6 +11,8 @@ alias cdw="cd ~/Work/current"
 alias gcam="git commit --amend --all --no-edit"
 alias glg="git log --stat --color --patch"
 alias open="xdg-open"
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
 
 # locale
 export LANG="en_US.UTF-8"
