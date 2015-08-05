@@ -1,5 +1,5 @@
 # aliases
-alias socks="ssh -Nn -D 1080 vps.push.org.ru"
+alias socks="ssh -Nn -D 1080 push.org.ru"
 alias externalip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 alias update="sudo brew update; brew upgrade; sudo npm install -g npm; sudo npm update -g"
