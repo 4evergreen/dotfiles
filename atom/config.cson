@@ -1,0 +1,13 @@
+"*":
+  welcome:
+    showOnStartup: false
+  minimap: {}
+  autosave:
+    enabled: true
+  vim-mode:
+    useSmartcaseForSearch: true
+  editor:
+    invisibles: {}
+    showInvisibles: true
+  tabs:
+    usePreviewTabs: true
