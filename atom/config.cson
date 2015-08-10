@@ -4,10 +4,12 @@
   minimap: {}
   autosave:
     enabled: true
-  vim-mode:
+  "vim-mode":
     useSmartcaseForSearch: true
   editor:
     invisibles: {}
     showInvisibles: true
   tabs:
     usePreviewTabs: true
+  "exception-reporting":
+    userId: "bc6a1b67-2418-19da-c19a-5348ae33e2d3"
