@@ -13,3 +13,15 @@
     usePreviewTabs: true
   "exception-reporting":
     userId: "7b11bae7-9b1d-c7e1-935a-23a9b12818ff"
+  core: {}
+  term2: {}
+  "atom-beautify":
+    _analyticsUserId: "f68fd771-c8b6-40d3-bdc9-11ce2041866b"
+  whitespace:
+    removeTrailingWhitespace: false
+  linter:
+    showErrorPanel: false
+  "linter-eslint":
+    useGlobalEslint: true
+    disableWhenNoEslintrcFileInPath: true
+    globalNodePath: "/usr/local"
