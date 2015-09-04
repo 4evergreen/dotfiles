@@ -3,6 +3,8 @@
 	email = grisha@push.org.ru
 [push]
 	default = current
+[pull]
+  defatul = current
 [core]
 	editor = /usr/local/bin/vim
 	excludesfile = /Users/grisha/.gitignore
