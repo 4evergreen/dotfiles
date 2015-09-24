@@ -26,6 +26,9 @@ export LC_TIME="ru_RU.UTF-8"
 # vi mode
 export KEYTIMEOUT=1
 
+# history separation
+setopt no_share_history
+
 # open last commit on github
 function gho {
   commit=$(git log -1 | head -n 1 | sed 's/commit //')
