@@ -2,7 +2,7 @@
 alias socks="ssh -Nn -D 1080 push.org.ru"
 alias externalip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
-alias update="sudo brew update; brew upgrade; sudo npm install -g npm; sudo npm update -g"
+alias update="brew update; brew upgrade; sudo npm install --global npm; sudo npm update --global"
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias gpf="git push --force"
 alias gb="git branch --verbose"
