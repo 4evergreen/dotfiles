@@ -145,3 +145,6 @@ endif
 
 " font
 set guifont=PT\ Mono:h13
+
+" turn on highlight
+syntax on
