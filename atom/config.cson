@@ -1,27 +1,53 @@
 "*":
-  welcome:
-    showOnStartup: false
-  minimap: {}
+  "atom-beautify":
+    _analyticsUserId: "f68fd771-c8b6-40d3-bdc9-11ce2041866b"
   autosave:
     enabled: true
-  "vim-mode":
-    useSmartcaseForSearch: true
+  blame: {}
+  core:
+    disabledPackages: [
+      "highlight-line"
+      "activate-power-mode"
+    ]
+    packagesWithKeymapsDisabled: [
+      "highlight-line"
+      "autosave"
+    ]
+    themes: [
+      "one-light-ui"
+      "solarized-light-syntax"
+    ]
   editor:
     invisibles: {}
     showInvisibles: true
-  tabs:
-    usePreviewTabs: true
+    tabLength: 4
   "exception-reporting":
     userId: "7b11bae7-9b1d-c7e1-935a-23a9b12818ff"
-  core: {}
-  term2: {}
-  "atom-beautify":
-    _analyticsUserId: "f68fd771-c8b6-40d3-bdc9-11ce2041866b"
-  whitespace:
-    removeTrailingWhitespace: false
+  "git-blame": {}
+  "git-diff": {}
+  "highlight-line":
+    hideHighlightOnSelect: true
   linter:
+    gutterPosition: "Left"
+    lintOnFly: false
     showErrorPanel: false
+    showErrorTabFile: false
+    showErrorTabProject: false
+    statusIconScope: "File"
   "linter-eslint":
-    useGlobalEslint: true
     disableWhenNoEslintrcFileInPath: true
     globalNodePath: "/usr/local"
+    useGlobalEslint: true
+  minimap:
+    plugins:
+      "minimap-hide": true
+  "one-light-ui": {}
+  tabs:
+    usePreviewTabs: true
+  term2: {}
+  "vim-mode":
+    useSmartcaseForSearch: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
