@@ -4,7 +4,7 @@
 [push]
 	default = current
 [pull]
-  defatul = current
+  rebase = true
 [core]
 	editor = /usr/local/bin/vim
 	excludesfile = /Users/grisha/.gitignore
