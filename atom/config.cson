@@ -1,10 +1,15 @@
 "*":
   "atom-beautify":
     _analyticsUserId: "f68fd771-c8b6-40d3-bdc9-11ce2041866b"
+    general:
+      _analyticsUserId: "69267a71-1ea1-4b06-b54b-60d03e06b136"
+  "autocomplete-plus":
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
   autosave:
     enabled: true
   blame: {}
   core:
+    audioBeep: false
     disabledPackages: [
       "highlight-line"
       "activate-power-mode"
@@ -12,18 +17,23 @@
     packagesWithKeymapsDisabled: [
       "highlight-line"
       "autosave"
+      "git-blame"
     ]
+    telemetryConsent: "limited"
     themes: [
-      "one-light-ui"
-      "solarized-light-syntax"
+      "one-dark-ui"
+      "pink-fluffy-atom-light-syntax"
     ]
   editor:
+    autoIndentOnPaste: false
     invisibles: {}
+    showIndentGuide: true
     showInvisibles: true
-    tabLength: 4
+    tabType: "soft"
   "exception-reporting":
     userId: "7b11bae7-9b1d-c7e1-935a-23a9b12818ff"
-  "git-blame": {}
+  "git-blame":
+    columnWidth: 303
   "git-diff": {}
   "highlight-line":
     hideHighlightOnSelect: true
@@ -41,13 +51,19 @@
   minimap:
     plugins:
       "minimap-hide": true
+      "minimap-hideDecorationsZIndex": 0
   "one-light-ui": {}
   tabs:
     usePreviewTabs: true
   term2: {}
   "vim-mode":
     useSmartcaseForSearch: true
+  "vim-mode-plus":
+    useClipboardAsDefaultRegister: false
+    useSmartcaseForSearch: true
   welcome:
     showOnStartup: false
   whitespace:
+    ensureSingleTrailingNewline: false
     ignoreWhitespaceOnCurrentLine: false
+    removeTrailingWhitespace: false
