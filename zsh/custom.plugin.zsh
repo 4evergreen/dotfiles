@@ -12,6 +12,7 @@ alias gcam="git commit --amend --all --no-edit"
 alias glg="git log --stat --color --patch"
 alias timer="utimer --stopwatch"
 alias gl='eval "git pull origin $(git symbolic-ref --short HEAD)"'
+alias serve='python -m SimpleHTTPServer'
 # check if it is linux
 # alias open="xdg-open"
 # alias pbcopy='xclip -selection clipboard'

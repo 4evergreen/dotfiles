@@ -82,7 +82,7 @@ set nobackup
 set noswapfile
 
 " colorscheme
-colorscheme anotherdark
+" colorscheme anotherdark
 
 " line width
 set textwidth=0
