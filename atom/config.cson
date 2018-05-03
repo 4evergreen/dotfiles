@@ -24,6 +24,8 @@
       "one-dark-ui"
       "pink-fluffy-atom-light-syntax"
     ]
+  "custom-title":
+    template: "<% if (projectPath) { %> <%= projectName %><% } %>"
   editor:
     autoIndentOnPaste: false
     invisibles: {}
