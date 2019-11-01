@@ -1,5 +1,5 @@
 # aliases
-alias socks="ssh -Nn -D 1080 push.org.ru"
+alias socks="ssh -Nn -D 1080 ec2-user@18.194.208.128"
 alias externalip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 alias update="brew update; brew upgrade; sudo npm install --global npm; sudo npm update --global"
@@ -9,14 +9,12 @@ alias gb="git branch --verbose"
 alias cdp="cd ~/Projects"
 alias cdw="cd ~/Work"
 alias gcam="git commit --amend --all --no-edit"
+alias gcm="git commit --message"
+alias gpd="git push && npm run deploy"
 alias glg="git log --stat --color --patch"
 alias timer="utimer --stopwatch"
 alias gl='eval "git pull origin $(git symbolic-ref --short HEAD)"'
 alias serve='python -m SimpleHTTPServer'
-# check if it is linux
-# alias open="xdg-open"
-# alias pbcopy='xclip -selection clipboard'
-# alias pbpaste='xclip -selection clipboard -o'
 
 # locale
 export LANG="en_US.UTF-8"
@@ -44,3 +42,13 @@ function gho {
 if which ruby >/dev/null && which gem >/dev/null; then
   PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
 fi
+
+# android development
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# flutter
+export PATH="$PATH:$HOME/Projects/flutter/bin"

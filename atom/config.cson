@@ -1,9 +1,11 @@
 "*":
   "atom-beautify":
-    _analyticsUserId: "f68fd771-c8b6-40d3-bdc9-11ce2041866b"
     general:
-      _analyticsUserId: "69267a71-1ea1-4b06-b54b-60d03e06b136"
+      _analyticsUserId: "f68fd771-c8b6-40d3-bdc9-11ce2041866b"
+  "atom-toolbar":
+    visible: false
   "autocomplete-plus":
+    autoActivationDelay: 500
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
   autosave:
     enabled: true
@@ -12,13 +14,15 @@
     audioBeep: false
     disabledPackages: [
       "highlight-line"
-      "activate-power-mode"
+      "spell-check"
     ]
+    followSymlinks: false
     packagesWithKeymapsDisabled: [
       "highlight-line"
       "autosave"
       "git-blame"
     ]
+    restorePreviousWindowsOnStart: "no"
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
@@ -28,12 +32,16 @@
     template: "<% if (projectPath) { %> <%= projectName %><% } %>"
   editor:
     autoIndentOnPaste: false
+    fontSize: 15
     invisibles: {}
+    preferredLineLength: 185
     showIndentGuide: true
     showInvisibles: true
-    tabType: "soft"
   "exception-reporting":
     userId: "7b11bae7-9b1d-c7e1-935a-23a9b12818ff"
+  "fuzzy-finder":
+    scoringSystem: "fast"
+    useRipGrep: true
   "git-blame":
     columnWidth: 303
   "git-diff": {}
@@ -50,6 +58,7 @@
     disableWhenNoEslintrcFileInPath: true
     globalNodePath: "/usr/local"
     useGlobalEslint: true
+  "linter-ui-default": {}
   minimap:
     plugins:
       "minimap-hide": true
@@ -58,6 +67,7 @@
   tabs:
     usePreviewTabs: true
   term2: {}
+  "tree-view": {}
   "vim-mode":
     useSmartcaseForSearch: true
   "vim-mode-plus":
