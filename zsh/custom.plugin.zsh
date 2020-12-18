@@ -1,6 +1,6 @@
 # aliases
 alias socks="ssh -Nn -D 1080 ec2-user@18.194.208.128"
-alias externalip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 alias update="brew update; brew upgrade; sudo npm install --global npm; sudo npm update --global"
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
@@ -31,18 +31,6 @@ export KEYTIMEOUT=1
 # history separation
 setopt no_share_history
 
-# open last commit on github
-function gho {
-  commit=$(git log -1 | head -n 1 | sed 's/commit //')
-  repo=$(git remote -v | head -n 1 | sed 's/.*:\(.*\/.*\).git .*/\1/')
-  open https://github.com/$repo/commit/$commit &> /dev/null
-}
-
-# gems in PATH
-if which ruby >/dev/null && which gem >/dev/null; then
-  PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
-fi
-
 # android development
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -50,5 +38,5 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-# flutter
-export PATH="$PATH:$HOME/Projects/flutter/bin"
+# disabled AWS_PAGER
+export AWS_PAGER=""
