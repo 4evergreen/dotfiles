@@ -1,5 +1,5 @@
 # aliases
-alias socks="ssh -Nn -D 1080 ec2-user@18.194.208.128"
+alias socks="ssh -Nn -D 1080 ubuntu@3.71.111.170"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 alias update="brew update; brew upgrade; sudo npm install --global npm; sudo npm update --global"

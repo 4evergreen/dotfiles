@@ -1,6 +1,0 @@
-'body':
-  'ctrl-shift-L': 'pane:show-next-item'
-  'ctrl-shift-H': 'pane:show-previous-item'
-
-'.platform-darwin atom-text-editor, .platform-linux atom-text-editor':
-  'ctrl-shift-L': 'pane:show-next-item'
